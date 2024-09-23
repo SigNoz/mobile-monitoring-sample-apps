@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A335F3F22C9D78C200DA8AC6 /* swift_otel_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F3F12C9D78C200DA8AC6 /* swift_otel_iosApp.swift */; };
+		A335F3F42C9D78C200DA8AC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F3F32C9D78C200DA8AC6 /* ContentView.swift */; };
+		A335F3F62C9D78C300DA8AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A335F3F52C9D78C300DA8AC6 /* Assets.xcassets */; };
+		A335F3F92C9D78C300DA8AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A335F3F82C9D78C300DA8AC6 /* Preview Assets.xcassets */; };
+		A335F4032C9D78C400DA8AC6 /* swift_otel_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F4022C9D78C400DA8AC6 /* swift_otel_iosTests.swift */; };
+		A335F40D2C9D78C400DA8AC6 /* swift_otel_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F40C2C9D78C400DA8AC6 /* swift_otel_iosUITests.swift */; };
+		A335F40F2C9D78C400DA8AC6 /* swift_otel_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F40E2C9D78C400DA8AC6 /* swift_otel_iosUITestsLaunchTests.swift */; };
+		A335F41D2C9D799F00DA8AC6 /* OpenTelemetryApi in Frameworks */ = {isa = PBXBuildFile; productRef = A335F41C2C9D799F00DA8AC6 /* OpenTelemetryApi */; };
+		A335F41F2C9D799F00DA8AC6 /* OpenTelemetryProtocolExporter in Frameworks */ = {isa = PBXBuildFile; productRef = A335F41E2C9D799F00DA8AC6 /* OpenTelemetryProtocolExporter */; };
+		A335F4212C9D799F00DA8AC6 /* OpenTelemetrySdk in Frameworks */ = {isa = PBXBuildFile; productRef = A335F4202C9D799F00DA8AC6 /* OpenTelemetrySdk */; };
+		A335F4232C9D799F00DA8AC6 /* ResourceExtension in Frameworks */ = {isa = PBXBuildFile; productRef = A335F4222C9D799F00DA8AC6 /* ResourceExtension */; };
+		A335F4252C9D799F00DA8AC6 /* SignPostIntegration in Frameworks */ = {isa = PBXBuildFile; productRef = A335F4242C9D799F00DA8AC6 /* SignPostIntegration */; };
+		A335F4272C9D799F00DA8AC6 /* StdoutExporter in Frameworks */ = {isa = PBXBuildFile; productRef = A335F4262C9D799F00DA8AC6 /* StdoutExporter */; };
+		A335F4292C9D799F00DA8AC6 /* ZipkinExporter in Frameworks */ = {isa = PBXBuildFile; productRef = A335F4282C9D799F00DA8AC6 /* ZipkinExporter */; };
+		A335F42C2C9D7A5800DA8AC6 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = A335F42B2C9D7A5800DA8AC6 /* GRPC */; };
+		A335F42E2C9D7B7900DA8AC6 /* OpentelemetrySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335F42D2C9D7B7900DA8AC6 /* OpentelemetrySetup.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A335F3FF2C9D78C400DA8AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A335F3E62C9D78C200DA8AC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A335F3ED2C9D78C200DA8AC6;
+			remoteInfo = "swift-otel-ios";
+		};
+		A335F4092C9D78C400DA8AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A335F3E62C9D78C200DA8AC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A335F3ED2C9D78C200DA8AC6;
+			remoteInfo = "swift-otel-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A335F3EE2C9D78C200DA8AC6 /* swift-otel-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otel-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A335F3F12C9D78C200DA8AC6 /* swift_otel_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otel_iosApp.swift; sourceTree = "<group>"; };
+		A335F3F32C9D78C200DA8AC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A335F3F52C9D78C300DA8AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A335F3F82C9D78C300DA8AC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A335F3FE2C9D78C400DA8AC6 /* swift-otel-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-otel-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A335F4022C9D78C400DA8AC6 /* swift_otel_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otel_iosTests.swift; sourceTree = "<group>"; };
+		A335F4082C9D78C400DA8AC6 /* swift-otel-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-otel-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A335F40C2C9D78C400DA8AC6 /* swift_otel_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otel_iosUITests.swift; sourceTree = "<group>"; };
+		A335F40E2C9D78C400DA8AC6 /* swift_otel_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otel_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A335F42D2C9D7B7900DA8AC6 /* OpentelemetrySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpentelemetrySetup.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A335F3EB2C9D78C200DA8AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335F42C2C9D7A5800DA8AC6 /* GRPC in Frameworks */,
+				A335F4212C9D799F00DA8AC6 /* OpenTelemetrySdk in Frameworks */,
+				A335F4292C9D799F00DA8AC6 /* ZipkinExporter in Frameworks */,
+				A335F41D2C9D799F00DA8AC6 /* OpenTelemetryApi in Frameworks */,
+				A335F4252C9D799F00DA8AC6 /* SignPostIntegration in Frameworks */,
+				A335F4232C9D799F00DA8AC6 /* ResourceExtension in Frameworks */,
+				A335F4272C9D799F00DA8AC6 /* StdoutExporter in Frameworks */,
+				A335F41F2C9D799F00DA8AC6 /* OpenTelemetryProtocolExporter in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F3FB2C9D78C400DA8AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F4052C9D78C400DA8AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A335F3E52C9D78C200DA8AC6 = {
+			isa = PBXGroup;
+			children = (
+				A335F3F02C9D78C200DA8AC6 /* swift-otel-ios */,
+				A335F4012C9D78C400DA8AC6 /* swift-otel-iosTests */,
+				A335F40B2C9D78C400DA8AC6 /* swift-otel-iosUITests */,
+				A335F3EF2C9D78C200DA8AC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A335F3EF2C9D78C200DA8AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A335F3EE2C9D78C200DA8AC6 /* swift-otel-ios.app */,
+				A335F3FE2C9D78C400DA8AC6 /* swift-otel-iosTests.xctest */,
+				A335F4082C9D78C400DA8AC6 /* swift-otel-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A335F3F02C9D78C200DA8AC6 /* swift-otel-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A335F3F12C9D78C200DA8AC6 /* swift_otel_iosApp.swift */,
+				A335F42D2C9D7B7900DA8AC6 /* OpentelemetrySetup.swift */,
+				A335F3F32C9D78C200DA8AC6 /* ContentView.swift */,
+				A335F3F52C9D78C300DA8AC6 /* Assets.xcassets */,
+				A335F3F72C9D78C300DA8AC6 /* Preview Content */,
+			);
+			path = "swift-otel-ios";
+			sourceTree = "<group>";
+		};
+		A335F3F72C9D78C300DA8AC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A335F3F82C9D78C300DA8AC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A335F4012C9D78C400DA8AC6 /* swift-otel-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A335F4022C9D78C400DA8AC6 /* swift_otel_iosTests.swift */,
+			);
+			path = "swift-otel-iosTests";
+			sourceTree = "<group>";
+		};
+		A335F40B2C9D78C400DA8AC6 /* swift-otel-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A335F40C2C9D78C400DA8AC6 /* swift_otel_iosUITests.swift */,
+				A335F40E2C9D78C400DA8AC6 /* swift_otel_iosUITestsLaunchTests.swift */,
+			);
+			path = "swift-otel-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A335F3ED2C9D78C200DA8AC6 /* swift-otel-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A335F4122C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-ios" */;
+			buildPhases = (
+				A335F3EA2C9D78C200DA8AC6 /* Sources */,
+				A335F3EB2C9D78C200DA8AC6 /* Frameworks */,
+				A335F3EC2C9D78C200DA8AC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-otel-ios";
+			packageProductDependencies = (
+				A335F41C2C9D799F00DA8AC6 /* OpenTelemetryApi */,
+				A335F41E2C9D799F00DA8AC6 /* OpenTelemetryProtocolExporter */,
+				A335F4202C9D799F00DA8AC6 /* OpenTelemetrySdk */,
+				A335F4222C9D799F00DA8AC6 /* ResourceExtension */,
+				A335F4242C9D799F00DA8AC6 /* SignPostIntegration */,
+				A335F4262C9D799F00DA8AC6 /* StdoutExporter */,
+				A335F4282C9D799F00DA8AC6 /* ZipkinExporter */,
+				A335F42B2C9D7A5800DA8AC6 /* GRPC */,
+			);
+			productName = "swift-otel-ios";
+			productReference = A335F3EE2C9D78C200DA8AC6 /* swift-otel-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A335F3FD2C9D78C400DA8AC6 /* swift-otel-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A335F4152C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-iosTests" */;
+			buildPhases = (
+				A335F3FA2C9D78C400DA8AC6 /* Sources */,
+				A335F3FB2C9D78C400DA8AC6 /* Frameworks */,
+				A335F3FC2C9D78C400DA8AC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A335F4002C9D78C400DA8AC6 /* PBXTargetDependency */,
+			);
+			name = "swift-otel-iosTests";
+			productName = "swift-otel-iosTests";
+			productReference = A335F3FE2C9D78C400DA8AC6 /* swift-otel-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A335F4072C9D78C400DA8AC6 /* swift-otel-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A335F4182C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-iosUITests" */;
+			buildPhases = (
+				A335F4042C9D78C400DA8AC6 /* Sources */,
+				A335F4052C9D78C400DA8AC6 /* Frameworks */,
+				A335F4062C9D78C400DA8AC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A335F40A2C9D78C400DA8AC6 /* PBXTargetDependency */,
+			);
+			name = "swift-otel-iosUITests";
+			productName = "swift-otel-iosUITests";
+			productReference = A335F4082C9D78C400DA8AC6 /* swift-otel-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A335F3E62C9D78C200DA8AC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A335F3ED2C9D78C200DA8AC6 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A335F3FD2C9D78C400DA8AC6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A335F3ED2C9D78C200DA8AC6;
+					};
+					A335F4072C9D78C400DA8AC6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A335F3ED2C9D78C200DA8AC6;
+					};
+				};
+			};
+			buildConfigurationList = A335F3E92C9D78C200DA8AC6 /* Build configuration list for PBXProject "swift-otel-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A335F3E52C9D78C200DA8AC6;
+			packageReferences = (
+				A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */,
+				A335F42A2C9D7A5800DA8AC6 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
+			productRefGroup = A335F3EF2C9D78C200DA8AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A335F3ED2C9D78C200DA8AC6 /* swift-otel-ios */,
+				A335F3FD2C9D78C400DA8AC6 /* swift-otel-iosTests */,
+				A335F4072C9D78C400DA8AC6 /* swift-otel-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A335F3EC2C9D78C200DA8AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335F3F92C9D78C300DA8AC6 /* Preview Assets.xcassets in Resources */,
+				A335F3F62C9D78C300DA8AC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F3FC2C9D78C400DA8AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F4062C9D78C400DA8AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A335F3EA2C9D78C200DA8AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335F3F42C9D78C200DA8AC6 /* ContentView.swift in Sources */,
+				A335F42E2C9D7B7900DA8AC6 /* OpentelemetrySetup.swift in Sources */,
+				A335F3F22C9D78C200DA8AC6 /* swift_otel_iosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F3FA2C9D78C400DA8AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335F4032C9D78C400DA8AC6 /* swift_otel_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A335F4042C9D78C400DA8AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A335F40F2C9D78C400DA8AC6 /* swift_otel_iosUITestsLaunchTests.swift in Sources */,
+				A335F40D2C9D78C400DA8AC6 /* swift_otel_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A335F4002C9D78C400DA8AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A335F3ED2C9D78C200DA8AC6 /* swift-otel-ios */;
+			targetProxy = A335F3FF2C9D78C400DA8AC6 /* PBXContainerItemProxy */;
+		};
+		A335F40A2C9D78C400DA8AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A335F3ED2C9D78C200DA8AC6 /* swift-otel-ios */;
+			targetProxy = A335F4092C9D78C400DA8AC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A335F4102C9D78C400DA8AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A335F4112C9D78C400DA8AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A335F4132C9D78C400DA8AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-otel-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A335F4142C9D78C400DA8AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swift-otel-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A335F4162C9D78C400DA8AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-otel-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift-otel-ios";
+			};
+			name = Debug;
+		};
+		A335F4172C9D78C400DA8AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-otel-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swift-otel-ios";
+			};
+			name = Release;
+		};
+		A335F4192C9D78C400DA8AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-otel-ios";
+			};
+			name = Debug;
+		};
+		A335F41A2C9D78C400DA8AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XN7GB32DS3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.swift-otel-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-otel-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A335F3E92C9D78C200DA8AC6 /* Build configuration list for PBXProject "swift-otel-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A335F4102C9D78C400DA8AC6 /* Debug */,
+				A335F4112C9D78C400DA8AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A335F4122C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A335F4132C9D78C400DA8AC6 /* Debug */,
+				A335F4142C9D78C400DA8AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A335F4152C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A335F4162C9D78C400DA8AC6 /* Debug */,
+				A335F4172C9D78C400DA8AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A335F4182C9D78C400DA8AC6 /* Build configuration list for PBXNativeTarget "swift-otel-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A335F4192C9D78C400DA8AC6 /* Debug */,
+				A335F41A2C9D78C400DA8AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-telemetry/opentelemetry-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+		A335F42A2C9D7A5800DA8AC6 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A335F41C2C9D799F00DA8AC6 /* OpenTelemetryApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = OpenTelemetryApi;
+		};
+		A335F41E2C9D799F00DA8AC6 /* OpenTelemetryProtocolExporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = OpenTelemetryProtocolExporter;
+		};
+		A335F4202C9D799F00DA8AC6 /* OpenTelemetrySdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = OpenTelemetrySdk;
+		};
+		A335F4222C9D799F00DA8AC6 /* ResourceExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = ResourceExtension;
+		};
+		A335F4242C9D799F00DA8AC6 /* SignPostIntegration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = SignPostIntegration;
+		};
+		A335F4262C9D799F00DA8AC6 /* StdoutExporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = StdoutExporter;
+		};
+		A335F4282C9D799F00DA8AC6 /* ZipkinExporter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F41B2C9D799F00DA8AC6 /* XCRemoteSwiftPackageReference "opentelemetry-swift" */;
+			productName = ZipkinExporter;
+		};
+		A335F42B2C9D7A5800DA8AC6 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A335F42A2C9D7A5800DA8AC6 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A335F3E62C9D78C200DA8AC6 /* Project object */;
+}
