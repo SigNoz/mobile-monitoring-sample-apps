@@ -1,0 +1,12 @@
+[submodule "android-ios-flutter"]
+	path = android-ios-flutter
+	url = https://github.com/UnCool-0x/android-ios-flutter-signoz-sample-app
+[submodule "ios-swift"]
+	path = ios-swift
+	url = https://github.com/UnCool-0x/ios-swift-signoz-sample-app
+[submodule "android-kotlin"]
+	path = android-kotlin
+	url = https://github.com/UnCool-0x/android-kotlin-signoz-sample-app
+[submodule "android-java"]
+	path = android-java
+	url = https://github.com/UnCool-0x/android-java-signoz-sample-app
