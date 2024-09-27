@@ -12,12 +12,12 @@ import StdoutExporter
 
 struct OpenTelemetrySetup {
     static func configureOpenTelemetry() {
-        let resources = DefaultResources().get()
+        // Adding resource attributes such as service name and version
+        let resource = DefaultResources().get().merging(other: Resource(attributes: [
+            "service.name": AttributeValue.string("anukul-swift-test"),   // Name of your app
+        ]))
         
-        let instrumentationScopeName = "SwiftExample"
-        let instrumentationScopeVersion = "semver:0.1.0"
-        
-        let otlpConfiguration: OtlpConfiguration = OtlpConfiguration(timeout: TimeInterval(10), headers: [("signoz-access-token", "xxxxxx")])
+        let otlpConfiguration: OtlpConfiguration = OtlpConfiguration(timeout: TimeInterval(10), headers: [("signoz-access-token", "xxxxxxx")])
         
         let grpcChannel = ClientConnection.usingPlatformAppropriateTLS(for: MultiThreadedEventLoopGroup(numberOfThreads: 1)).connect(host: "ingest.[region].signoz.cloud", port: 443)
         
@@ -27,9 +27,11 @@ struct OpenTelemetrySetup {
         let spanExporter = MultiSpanExporter(spanExporters: [otlpTraceExporter, stdoutExporter])
         
         let spanProcessor = SimpleSpanProcessor(spanExporter: spanExporter)
+        
         OpenTelemetry.registerTracerProvider(tracerProvider:
             TracerProviderBuilder()
                 .add(spanProcessor: spanProcessor)
+                .with(resource: resource)  // Add the resource with service name
                 .build()
         )
     }
