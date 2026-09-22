@@ -47,3 +47,14 @@ git sparse-checkout set ios-swift
 
 then there will be a single folder for Swift sample app, you can change directory to it, using ```cd ios-swift```
 and run by following it's own instructions.
+
+## Android samples
+
+`android-kotlin` and `android-java` use the
+[OpenTelemetry Android agent](https://signoz.io/docs/instrumentation/mobile-instrumentation/opentelemetry-android/)
+and send traces, logs and metrics. Each has its own README with setup steps.
+
+The agent's configuration DSL is Kotlin only. The Java sample shows the `RumBuilder` path
+from the `core` module, which is how a Java app uses the same agent.
+
+`ios-swift` and `android-ios-flutter` still use the older per-signal SDK setup.

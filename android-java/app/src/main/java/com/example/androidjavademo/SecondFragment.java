@@ -40,8 +40,13 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Tracer tracer = OpenTelemetryUtil.getTracer();
-                Span span = tracer.spanBuilder("Second Fragment Button onClick").startSpan();
+                Tracer tracer = DemoApplication.tracer();
+                if (tracer == null) {
+                    NavHostFragment.findNavController(SecondFragment.this)
+                            .navigate(R.id.action_SecondFragment_to_FirstFragment);
+                    return;
+                }
+                Span span = tracer.spanBuilder("back-to-products").startSpan();
                 try (Scope scope = span.makeCurrent()) {
                     System.out.println(span.getSpanContext().getTraceId());
                     System.out.println(span.getSpanContext().getSpanId());
